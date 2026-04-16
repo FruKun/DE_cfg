@@ -24,3 +24,7 @@ alias lc='ls -CF'
 alias nvimc='rm -I $VIMCONFIG/swap/*' # clean nvim swap file
 
 
+# | vpn |
+
+alias tt='/opt/trusttunnel_client/trusttunnel_client'
+alias tt_tun='sudo /opt/trusttunnel_client/trusttunnel_client --config /opt/trusttunnel_client/trusttunnel_client_tun.toml'
