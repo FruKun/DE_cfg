@@ -10,13 +10,12 @@
     "modules-left": [
 	"memory",
 	"temperature",
-	"hyprland/workspaces",
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
-        "hyprland/language",
+        "niri/language",
         "pulseaudio",
         "backlight",
         "battery",
@@ -25,20 +24,10 @@
     ],
 
    // Modules configuration
-     "hyprland/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true,
-         "warp-on-scroll": false
-     },
-     "hyprland/window":{
-     	"format":"{class}"
-     },
-    
-    "hyprland/language":{
-	"format":"{short}"
+    "niri/language": {
+    	"format": "{short}",
     },
-    
-    "tray": {
+   "tray": {
         // "icon-size": 21,
         "spacing": 10
     },
@@ -74,7 +63,11 @@
         "critical-threshold": 80,
 	// "format-critical": "{temperatureC}°C {icon}",
         "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", ""]
+        "format-icons": [
+            "󱃃",
+            "󰔏",
+            "󱃂"
+        ]
     },
     "backlight": {
         // "device": "acpi_video1",

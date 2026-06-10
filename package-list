@@ -1,6 +1,4 @@
-chromium
 firefox
-telegram-desktop
 pyenv
 brightnessctl
 btop
@@ -30,4 +28,7 @@ woff2-font-awesome
 xdg-desktop-portal-gtk
 niri
 kitty
+tmux
+fzf
+tree-sitter-cli
 

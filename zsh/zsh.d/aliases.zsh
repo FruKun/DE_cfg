@@ -28,3 +28,4 @@ alias nvimc='rm -I $VIMCONFIG/swap/*' # clean nvim swap file
 
 alias tt='/opt/trusttunnel_client/trusttunnel_client'
 alias tt_tun='sudo /opt/trusttunnel_client/trusttunnel_client --config /opt/trusttunnel_client/trusttunnel_client_tun.toml'
+alias v2rayn="env DISPLAY=:0 nohup /opt/v2rayn/v2rayN &"

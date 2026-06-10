@@ -80,16 +80,27 @@ layout {
     gaps 4
 
     center-focused-column "on-overflow"
+    always-center-single-column
+    empty-workspace-above-first
+
+    // default-column-display "tabbed"
+    tab-indicator {
+        hide-when-single-tab
+        width 4
+        gap 1
+        length total-proportion=1.001
+        position "top"
+        place-within-column
+    }
 
     preset-column-widths {
         proportion 0.33333
-        proportion 0.5
+        proportion 0.49999
         proportion 0.66667
-        proportion 0.5
+        proportion 0.49999
     }
 
     preset-window-heights {
-        proportion 0.33333
         proportion 0.5
         proportion 0.66667
         proportion 0.99999
@@ -105,6 +116,11 @@ layout {
     }
 
     background-color "transparent"
+}
+
+cursor {
+    xcursor-theme "catppuccin-mocha-dark-cursors"
+    xcursor-size 20
 }
 
 hotkey-overlay {
@@ -124,3 +140,6 @@ animations {
     // off
 }
 
+blur {
+    off
+}

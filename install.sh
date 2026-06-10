@@ -1,6 +1,7 @@
 #!/bin/sh
 mkdir -p ~/.config/.bcp
 mv ~/.config/kitty ~/.config/.bcp/.
+mv ~/.config/tmux ~/.config/.bcp/.
 mv ~/.config/gtk-3.0 ~/.config/.bcp/.
 mv ~/.config/gtk-4.0 ~/.config/.bcp/.
 mv ~/.config/niri ~/.config/.bcp/.
@@ -10,6 +11,7 @@ mv ~/.config/swaylock ~/.config/.bcp/.
 mv ~/.config/swaync ~/.config/.bcp/.
 mv ~/.config/waybar ~/.config/.bcp/.
 mv ~/.config/wofi ~/.config/.bcp/.
+mv ~/.config/systemd/user ~/.config/.bcp/.
 mv ~/.config/xsettingsd ~/.config/.bcp/.
 mv ~/.gtkrc-2.0 ~/.config/.bcp/.
 mv ~/.config/zsh ~/.config/.bcp/.
@@ -19,6 +21,7 @@ mv ~/.config/chromium-flags.conf ~/.config/.bcp/.
 mv ~/.config/code-flags.conf ~/.config/.bcp/.
 mv ~/.config/electron-flags.conf ~/.config/.bcp/.
 ln -s ~/DE_cfg/kitty ~/.config/kitty
+ln -s ~/DE_cfg/tmux ~/.config/tmux
 ln -s ~/DE_cfg/gtk-3.0 ~/.config/gtk-3.0
 ln -s ~/DE_cfg/gtk-4.0 ~/.config/gtk-4.0
 ln -s ~/DE_cfg/niri ~/.config/niri
@@ -30,6 +33,8 @@ ln -s ~/DE_cfg/waybar ~/.config/waybar
 ln -s ~/DE_cfg/wofi ~/.config/wofi
 ln -s ~/DE_cfg/xsettingsd ~/.config/xsettingsd
 ln -s ~/DE_cfg/.gtkrc-2.0 ~/.gtkrc-2.0
+mkdir -p ~/.config/systemd
+ln -s ~/DE_cfg/user ~/.config/systemd/user
 mkdir -p ~/.config/zsh/plugins
 ln -s ~/DE_cfg/zsh/zsh.d ~/.config/zsh
 ln -s ~/DE_cfg/zsh/.zshrc ~/.config/zsh
