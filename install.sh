@@ -34,7 +34,7 @@ ln -s ~/DE_cfg/wofi ~/.config/wofi
 ln -s ~/DE_cfg/xsettingsd ~/.config/xsettingsd
 ln -s ~/DE_cfg/.gtkrc-2.0 ~/.gtkrc-2.0
 mkdir -p ~/.config/systemd
-ln -s ~/DE_cfg/user ~/.config/systemd/user
+ln -s ~/DE_cfg/systemd/user ~/.config/systemd/user
 mkdir -p ~/.config/zsh/plugins
 ln -s ~/DE_cfg/zsh/zsh.d ~/.config/zsh
 ln -s ~/DE_cfg/zsh/.zshrc ~/.config/zsh
@@ -42,3 +42,4 @@ ln -s ~/DE_cfg/.zshenv ~/.zshenv
 ln -s ~/DE_cfg/chromium-flags.conf ~/.config/chromium-flags.conf
 ln -s ~/DE_cfg/code-flags.conf ~/.config/code-flags.conf
 ln -s ~/DE_cfg/electron-flags.conf ~/.config/electron-flags.conf
+systemctl --user daemon-reload
